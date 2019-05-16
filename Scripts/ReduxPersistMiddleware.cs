@@ -1,7 +1,6 @@
-using QFramework.UIWidgets.ReduxPersist;
 using Unity.UIWidgets;
 
-namespace LearnUIWidgets
+namespace QFramework.UIWidgets.ReduxPersist
 {
     public class ReduxPersistMiddleware
     {

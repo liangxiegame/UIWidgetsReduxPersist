@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace QFramework.UIWidgets.ReduxPersist
 {
-    public abstract class AbstractPersistState<T> where T: AbstractPersistState<T>,new()
+    public abstract class AbstractPersistState<T> where T : AbstractPersistState<T>, new()
     {
         private const string KEY = "REDUX_PERISIST";
 
@@ -19,12 +19,12 @@ namespace QFramework.UIWidgets.ReduxPersist
             {
                 return JsonConvert.DeserializeObject<T>(jsonContent);
             }
-            
+
         }
 
         public void Save()
         {
-            PlayerPrefs.SetString(KEY,JsonConvert.SerializeObject(this));    
+            PlayerPrefs.SetString(KEY, JsonConvert.SerializeObject(this));
         }
     }
 }

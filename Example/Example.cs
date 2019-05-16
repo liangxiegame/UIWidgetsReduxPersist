@@ -1,12 +1,4 @@
-# UIWidgetsReduxPersist
-Saver Middle Ware 4 UIWidgets Redux
-
-
-
-### Example:
-
-``` csharp
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Unity.UIWidgets;
 using Unity.UIWidgets.engine;
 using Unity.UIWidgets.material;
@@ -44,7 +36,7 @@ namespace QF.UIWidgets.ReduxPersist.Example
                             };
                     }
 
-                    return state; 
+                    return state;
                 },
                 // 3.call load
                 ExampleState.Load(),
@@ -66,7 +58,7 @@ namespace QF.UIWidgets.ReduxPersist.Example
                                 new FlatButton(
                                     child: new Text("+"),
                                     onPressed: () => { dispatcher.dispatch(new IncreaseCountAction()); }
-                                ),
+                                )
                             }
                         );
                     }
@@ -85,12 +77,3 @@ namespace QF.UIWidgets.ReduxPersist.Example
 
     }
 }
-
-```
-
-
-
-### Dependenciy:
-
-*  [JSON.NET for Unity](https://assetstore.unity.com/packages/tools/input-management/json-net-for-unity-11347)
-* [UIWidgets](https://github.com/UnityTech/UIWidgets)
